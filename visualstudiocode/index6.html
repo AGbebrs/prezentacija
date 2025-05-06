@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV lasītājs</title>
+    <style>
+        td {
+            border: 1px solid #000;
+        }
+    </style>
+    <script>
+        //Rakstam JS kodu, kas atvērs un izlasīs csv failuS
+        //Funkcija nr.1
+        function openFile(event){
+            //Definējam 2 mainīgos - failu un tā lasītāju
+            let input = event.target;
+            let reader = new FileReader();
+
+            //Kad fails ir ielādēts, tad tiek izsaukta šī funkcija
+            //Funkcija nr.2
+            reader.onload = function(){
+                //Definējam mainīgo, kas var piekļūt tabulas šūnai ar id "cell"
+                let content = document.getElementById("result");
+                //Definējam mainīgo, kas satur csv faila saturu
+                let text = reader.result;
+
+                //Izsaucam funkciju, kas pieņem 2 parametrus 
+                tableCSV(text, content);
+
+            };
+            reader.readAsText(input.files[0]);
+        }
+
+        //Funkcija nr.3
+        //Funkcija, kas sadala CSV tekstu gabalos, un ielasa tabulā
+        function tableCSV(csvData, content) {
+            
+
+            //Definējam mainīgo, kas sadala tekstu pēc konkrētas rakstzīmes 
+            let rows = csvData.split('\n');
+
+        }
+    </script>
+</head>
+<body>
+    <h1> CSV lasītājs </h1>
+    <!-- Input lauks -->
+    <form>
+        <input type="file" onchange="openFile(event)" accept=".csv">
+    </form>
+
+    <!-- Tabula, kur tiks ielasītas visas CSV faila vērtības -->
+    <table id="result">
+        <!-- Automātiski tiks izveidotas tabulas rindas un šūnas -->
+    </table>
+</body>
+</html>

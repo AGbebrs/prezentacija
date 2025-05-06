@@ -1,0 +1,33 @@
+.pulkvedis{
+background-color: aqua;
+height: 100px;
+width: 100px;
+margin: 10px;
+border: 2px solid gray;
+border-radius: 100px;
+
+
+
+}
+
+.zeimanis{
+background-color: blueviolet;
+height: 100px;
+width: 100px;
+margin: 10px;
+border: 2px solid blue;
+border-radius: 100px;
+
+
+}
+
+.ermanbrix{
+background-color:solid green;
+height: 100px;
+width: 100px;
+margin: 10px;
+border: 2px solid black;
+border-radius: 100px;
+
+
+}

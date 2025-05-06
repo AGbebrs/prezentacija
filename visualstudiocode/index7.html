@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Kalkulatora HTML struktūra -->
+
+    <!-- 1.bloks - konteiners, kas satur kalkulatoru -->
+    <body>
+        <!-- Kalkulatora HTML struktūra -->
+    
+        <!-- 1.bloks - konteiners, kas satur kalkulatoru -->
+        <div id="container">
+            <!-- Displejs -->
+            <div id="display"></div>
+            <!-- Visas pogas -->
+            <button id="clear" value="" onclick="clearInput()">C</button>
+            <button class="num" value="1" onclick="getValue(event)">1</button>
+            <button class="num" value="2" onclick="getValue(event)">2</button>
+            <button class="num" value="3" onclick="getValue(event)">3</button>
+            <button class="num" value="4" onclick="getValue(event)">4</button>
+            <button class="num" value="5" onclick="getValue(event)">5</button>
+            <button class="num" value="6" onclick="getValue(event)">6</button>
+            <button class="num" value="7" onclick="getValue(event)">7</button>
+            <button class="num" value="8" onclick="getValue(event)">8</button>
+            <button class="num" value="9" onclick="getValue(event)">9</button>
+            <button class="num" value="0" onclick="getValue(event)">0</button>
+            <button class="ops" value="+" onclick="getValue(event)">+</button>
+            <button class="ops" value="-" onclick="getValue(event)">-</button>
+            <button class="ops" value="/" onclick="getValue(event)">/</button>
+            <button class="ops" value="*" onclick="getValue(event)">*</button>
+            <button id="decimal" value="." onclick="getValue(event)">.</button>
+            <button id="result" value="=" onclick="result()">=</button>
+            
+    
+    
+        </div>
+    
+        <script src="script.js"></script>
+    </body>

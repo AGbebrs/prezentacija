@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<button onclick="showAlert()">noklikstini mani</button>
+<script>
+function showAlert() {
+alert("paldies");
+}
+
+
+</script>
+<h1>Javascript jautajumi</h1>
+<p>Cik Latvijā ir bijuši prezidenti?</p>
+<input type="text" id="answer">
+<button onclick="checkAnswer()">Pārbaudīt</button>
+
+<p id="feedback"></p>
+<script>
+function checkAnswer() {
+var answer = document.getElementById("answer").
+value;
+var feedback = document.getElementById
+("feedback")
+if (answer === '11') {
+feedback.innerHTML = "Pareizi!";
+
+}else{
+feedback.innerHTML = "Nepareizi, mēģini vēlreiz.";
+
+
+}
+}
+
+
+
+</script>
+<h1>Javascript jautajumi</h1>
+<p>Cik Latvijā ir valstspilsētas?</p>
+<input type="text" id="frosmaris">
+<button onclick="checkFrosmaris()">Pārbaudīt</button>
+
+<p id="ermans"></p>
+<script>
+function checkFrosmaris() {
+var answer = document.getElementById("frosmaris").
+value;
+var feedback = document.getElementById
+("ermans")
+if (answer === '7') {
+feedback.innerHTML = "Pareizi!";
+
+}else{
+feedback.innerHTML = "Nepareizi, mēģini vēlreiz.";
+
+
+}
+
+
+
+}
+</script>
+
+
+
+
+
+<h1>Javascript jautajumi</h1>
+<p>Latvijas galvaspilsēta?</p>
+<input type="text" id="zeimanis">
+<button onclick="checkZeimanis()">Pārbaudīt</button>
+
+<p id="lenais"></p>
+<script>
+function checkZeimanis() {
+var answer = document.getElementById("zeimanis").
+value;
+var feedback = document.getElementById
+("lenais")
+if (answer === 'Ainaži') {
+feedback.innerHTML = "Pareizi!";
+
+}else{
+feedback.innerHTML = "Nepareizi, mēģini vēlreiz.";
+
+
+}
+
+
+
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pogas.css">
+</head>
+<body>
+
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="Registracija.html">Reģistrācija</a>
+                <!-- First Tier Drop Down -->
+            <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Google</a></li>
+                    <li><a href="#">Instagram</a></li>
+            </ul>        
+                </li>
+                <li><a href="pogas.html">Web Design</a>
+                <!-- First Tier Drop Down -->
+                <ul>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">Links</a></li>
+                    <li><a href="#">Tutorials</a>
+                  <!-- Second Tier Drop Down -->
+                    <ul>
+                        <li><a href="#">HTML/CSS</a></li>
+                        <li><a href="#">jQuery</a></li>
+                        <li><a href="#">Other</a>
+                            <!-- Third Tier Drop Down -->
+                            <ul>
+                                <li><a href="#">Stuff</a></li>
+                                <li><a href="#">Things</a></li>
+                                <li><a href="#">Other Stuff</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+                </li>
+                <li><a href="#">Graphic Design</a></li>
+                <li><a href="#">Inspiration</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+      
+      </div> 
+
+<hi>Izvēlies fona krāsu</hi>
+
+
+<button onclick="setBgRed()">MērniekuSuns</button>
+<button onclick="setBgBlue()">Feodīts</button>
+<button onclick="setBgGreen()">Artūrs</button>
+<button onclick="setBgYellow()">Tadžiks</button>
+<button onclick="setBgColor()">Elmis</button>
+
+
+
+
+<script>
+
+function btnRed() {
+    document.getElementById("Div1").style.backgroundColor="Red";
+}
+
+function btnGreen() {
+    document.getElementById("Div2").style.backgroundColor="Green";
+}
+
+function btnBlue() {
+    document.getElementById("Div3").style.backgroundColor="Blue";
+}
+
+function btnReset() {
+
+document.getElementById("Div1").style.backgroundColor="Black";
+    document.getElementById("Div2").style.backgroundColor="white";
+    document.getElementById("Div3").style.backgroundColor="white";
+
+
+}
+
+
+    
+
+</script>
+
+
+
+
+    <script src="pogas.js"></script>
+</body>
+</html>
